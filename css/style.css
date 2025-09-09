@@ -2,8 +2,6 @@
     --negro: #000;
     --blanco: #fff;
     --principal: #a5965a;
-
-
 }
 
 /* GENERALES */
@@ -79,7 +77,7 @@ header {
 }
 
 /* CARRITO */
-.borrar-curso {
+.borrar-producto {
     background-color: red;
     border-radius: 50%;
     padding: 5px 10px;
