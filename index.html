@@ -10,9 +10,6 @@
 </head>
 <body>
 
-    
-
-
     <header id="header" class="header">
         <div class="container">
             <div class="row">
@@ -31,11 +28,12 @@
                                             <th>Nombre</th>
                                             <th>Precio</th>
                                             <th>Cantidad</th>
-                                            <th></th>
+                                            <th>Subtotal</th>
                                         </tr>
                                     </thead>
                                     <tbody></tbody>
                                 </table>
+                                <p>Total a pagar: <span id="total-carrito"></span></p>
 
                                 <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
                             </div>
@@ -49,87 +47,7 @@
 
     <main class="contenedor">
         <h1>Prueba nuestros cafés</h1>
-        <div id="lista-productos">
-            <div class="producto">
-                <h2 class="producto__titulo">Mocha</h3>
-                <div class="producto__imagen">
-                    <img src="img/mocha.jpeg" alt="Cafe mocha">
-                </div>
-                <div class="producto__informacion">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laborum maxime recusandae labore illum commodi alias.
-                    </p>
-                    <p class="precio">Precio: <span class="negritas">$50</span></p>
-                    <button class="agregar-carrito" type="button" data-id="1"> Agregar al carrito </button>
-                </div>
-            </div> <!-- .producto -->
-            <div class="producto">
-                <h2 class="producto__titulo">irish</h3>
-                <div class="producto__imagen">
-                    <img src="img/irish.jpeg" alt="Cafe irish">
-                </div>
-                <div class="producto__informacion">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laborum maxime recusandae labore illum commodi alias.
-                    </p>
-                    <p class="precio">Precio: <span class="negritas">$50</span></p>
-                    <button class="agregar-carrito" type="button" data-id="2"> Agregar al carrito </button>
-                </div>
-            </div> <!-- .producto -->
-            <div class="producto">
-                <h2 class="producto__titulo">Latte</h3>
-                <div class="producto__imagen">
-                    <img src="img/latte.jpeg" alt="Cafe latte">
-                </div>
-                <div class="producto__informacion">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laborum maxime recusandae labore illum commodi alias.
-                    </p>
-                    <p class="precio">Precio: <span class="negritas">$50</span></p>
-                    <button class="agregar-carrito" type="button" data-id="3"> Agregar al carrito </button>
-                </div>
-            </div> <!-- .producto -->
-            <div class="producto">
-                <h2 class="producto__titulo">Espresso</h3>
-                <div class="producto__imagen">
-                    <img src="img/espresso.jpeg" alt="Cafe espresso">
-                </div>
-                <div class="producto__informacion">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laborum maxime recusandae labore illum commodi alias.
-                    </p>
-                    <p class="precio">Precio: <span class="negritas">$50</span></p>
-                    <button class="agregar-carrito" type="button" data-id="4"> Agregar al carrito </button>
-                </div>
-            </div> <!-- .producto -->
-            <div class="producto">
-                <h2 class="producto__titulo">Americano</h3>
-                <div class="producto__imagen">
-                    <img src="img/americano.jpeg" alt="Cafe americano">
-                </div>
-                <div class="producto__informacion">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laborum maxime recusandae labore illum commodi alias.
-                    </p>
-                    <p class="precio">Precio: <span class="negritas">$50</span></p>
-                    <button class="agregar-carrito" type="button" data-id="5"> Agregar al carrito </button>
-                </div>
-            </div> <!-- .producto -->
-            <div class="producto">
-                <h2 class="producto__titulo">Cappuccino</h3>
-                <div class="producto__imagen">
-                    <img src="img/capuchino.jpeg" alt="Cafe cappuccino">
-                </div>
-                <div class="producto__informacion">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laborum maxime recusandae labore illum commodi alias.
-                    </p>
-                    <p class="precio">Precio: <span class="negritas">$50</span></p>
-                    <button class="agregar-carrito" type="button" data-id="6"> Agregar al carrito </button>
-                </div>
-            </div> <!-- .producto -->
-        </div> <!-- #lista-productos -->
-        
+        <div id="lista-productos"></div>         
     </main>
     <footer class="footer">
         
