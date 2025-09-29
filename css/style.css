@@ -30,12 +30,15 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 img {
     max-width: 100%;
     max-height: 30rem;
+}
+a {
+    text-decoration: none;
 }
 
 .contenedor {
@@ -45,11 +48,6 @@ img {
 
 
 /* UTILIDADES */
-
-.negritas {
-    font-weight: 700;
-}
-
 .no-margin {
     margin: 0;
 }
@@ -62,27 +60,128 @@ img {
     text-align: center;
 }
 
+.negritas {
+    font-weight: 700;
+}
+
+/* ESTADOS DE MENSAJES */
+.error {
+    text-align: center;
+    padding: 2rem;
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+}
+
+/* PRODUCTOS */
+.producto {
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
 /* HEADER */
 
 header {
-    padding: 20px 0 0 0;
-    background: white;
+    background-image: url('../img/banner.jpg');
+    height: 50rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 2rem 0 0 0;
     text-align: center;
+    color: var(--blanco);
+    opacity: 0.9;
+}
+.header__texto {
+    color: var(--blanco);
+    margin-top: 4rem;
 }
 
 @media (min-width: 750px) {
     header {
         text-align: left;
     }
+
+    .header__texto {
+        margin-top: 15rem;
+    }
+}
+
+.barra {
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;  /* Alinear horizontalmente y Espacio entre elementos */
+        align-items: center;  /* Alinea verticalmente los elementos */
+    }
+}
+
+.logo {
+    color: var(--blanco);
+}
+
+.logo__nombre {
+    font-weight: 400;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+.navegacion__enlace {
+    color: var(--blanco);
+    font-size: 1.8rem;
 }
 
 /* CARRITO */
+.carrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#img-carrito {
+    width: 2rem;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    #img-carrito {
+        width: 4rem;
+    }
+}
+
 .borrar-producto {
     background-color: red;
     border-radius: 50%;
-    padding: 5px 10px;
+    padding: .8rem 1rem;
     text-decoration: none;
-    color: white;
+    color: var(--blanco);
     font-weight: bold;
 }
 
@@ -92,34 +191,32 @@ ul {
 
 .submenu {
     position: relative;
+    display: flex;
 }
 
-.submenu #carrito{
+/* Carrito oculto por defecto */
+.submenu #carrito {
     display: none;
-}
-
-.submenu:hover #carrito{
-    display: block;
     position: absolute;
-    right:0;
-
-    top:100%;
-    z-index: 1;
-    background-color: white;
-    padding: 20px;
-    min-height: 400px;
-    min-width: 300px;
+    right: 0;
+    top: 100%;
+    z-index: 1000;
+    background-color: var(--negro);
+    padding: 2rem;
+    min-height: 30rem;
+    min-width: 30rem;
 }
 
-.vacio {
-    padding: 10px;
-    background-color: crimson;
-    text-align: center;
-    border-radius: 10px;
-    color: white;
+/* Hover para mostrar carrito */
+.submenu:hover #carrito {
+    display: block;
 }
 
 /* MAIN */
+#lista-productos {
+    margin-top: 3rem;
+}
+
 @media (min-width: 768px) {
     #lista-productos {
         display: grid;
@@ -131,4 +228,25 @@ ul {
 .producto {
     padding: 2rem;
     text-align: center;
+}
+
+/* Estilos personalizados para SweetAlert2 Toast */
+.swal-toast-custom {
+    border-left: 4px solid var(--principal);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.swal-toast-custom .swal2-title {
+    font-size: 1.4rem;
+    color: var(--principal);
+    font-weight: bold;
+}
+
+.swal-toast-custom .swal2-html-container {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.swal-toast-custom .swal2-timer-progress-bar {
+    background: var(--principal);
 }

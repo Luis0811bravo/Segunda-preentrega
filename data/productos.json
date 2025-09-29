@@ -1,0 +1,53 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "titulo": "Mocha",
+      "precio": 100,
+      "descripcion": "Café con chocolate y crema",
+      "imagen": "../img/mocha.jpeg"
+    },
+    {
+      "id": "2",
+      "titulo": "Irish Coffee",
+      "precio": 200,
+      "descripcion": "Café con whisky y crema",
+      "imagen": "../img/irish.jpeg"
+    },
+    {
+      "id": "3",
+      "titulo": "Latte",
+      "precio": 300,
+      "descripcion": "Café con leche y espuma",
+      "imagen": "../img/latte.jpeg"
+    },
+    {
+      "id": "4",
+      "titulo": "Espresso",
+      "precio": 400,
+      "descripcion": "Café solo con crema",
+      "imagen": "../img/espresso.jpeg"
+    },
+    {
+      "id": "5",
+      "titulo": "Americano",
+      "precio": 500,
+      "descripcion": "Café filtrado con agua caliente",
+      "imagen": "../img/americano.jpeg"
+    },
+    {
+      "id": "6",
+      "titulo": "Cappuccino",
+      "precio": 600,
+      "descripcion": "Café con leche vaporizada y espuma",
+      "imagen": "../img/capuchino.jpeg"
+    }
+  ],
+  "ofertas": [
+    {
+      "id": "1",
+      "descuento": 10,
+      "vigencia": "2025-12-31"
+    }
+  ]
+}

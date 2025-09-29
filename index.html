@@ -12,41 +12,50 @@
 
     <header id="header" class="header">
         <div class="container">
-            <div class="row">
-                <!-- <div class="four columns">
-                    <img src="img/logo.png" id="logo">
-                </div> -->
-                <div class="two columns u-pull-right">
-                    <ul>
-                        <li class="submenu">
-                            <img src="img/cart.png" id="img-carrito">
-                            <div id="carrito">    
-                                <table id="lista-carrito" class="u-full-width">
-                                    <thead>
-                                        <tr>
-                                            <th>Producto</th>
-                                            <th>Nombre</th>
-                                            <th>Precio</th>
-                                            <th>Cantidad</th>
-                                            <th>Subtotal</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
-                                <p>Total a pagar: <span id="total-carrito"></span></p>
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no-margin centrar-texto">Café<span class="neritas">Bravo</span></h1>
+                </a>
 
-                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div> 
+                <nav class="navegacion">
+                    <a class="navegacion__enlace" href="#">Nosotros</a>
+                    <a class="navegacion__enlace" href="#">Cursos</a>
+                    <a class="navegacion__enlace" href="#">Contacto</a>
+
+                    <div class="carrito">
+                        <ul class="no-margin no-padding">
+                            <li class="submenu">
+                                <img src="img/cart.png" id="img-carrito" alt="Carrito de compras">
+                                <div id="carrito">
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Producto</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th>Subtotal</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                    <button id class="button u-full-width">Total a pagar: <span id="total-carrito"></span></button>
+
+                                    <button id="finalizar-compra" class="button u-full-width button-primary">Finalizar Compra</button>
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="header__texto centrar-texto">
+                <h2 class="no-margin">Prueba nuestros cafés</h2>
+            </div>
         </div>
     </header>
 
-
     <main class="contenedor">
-        <h1>Prueba nuestros cafés</h1>
         <div id="lista-productos"></div>         
     </main>
     <footer class="footer">
@@ -54,7 +63,7 @@
     </footer>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script/script.js"></script>
 </body>
 </html>
